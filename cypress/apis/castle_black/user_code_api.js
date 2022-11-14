@@ -1,6 +1,6 @@
-module.exports = {
-    postUserCodeOptions: function () {
-        return {
+module.exports = {    
+    postUserCode: function () {
+        return cy.request({
             method: 'POST',
             url: 'https://castle-black-edge.stsh.io/api/v1/users/f777dda2-4dc2-441a-8c36-d1b71cfef790/code?client_id=2024400d-b3ad-4cfd-b20b-23a18cde27db&response_type=code&redirect_uri=https://app-edge.stash.com/authorize&code_challenge_method=S256&code_challenge=test',
             body: {
@@ -13,6 +13,6 @@ module.exports = {
                     "issue_reason": "user_sign_up"
                 }
             }
-        }
+        })
     }
 }

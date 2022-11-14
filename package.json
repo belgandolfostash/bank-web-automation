@@ -30,5 +30,10 @@
     "eslint-plugin-react": "^7.31.10",
     "husky": "^8.0.2",
     "prettier": "^2.7.1"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "jquery": "^3.6.1",
+    "jsdom": "^20.0.2"
   }
 }
